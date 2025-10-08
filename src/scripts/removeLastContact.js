@@ -27,7 +27,7 @@ export const removeLastContact = async () => {
     console.error('❌ Cannot remove last contact:', error.message);
 
     if (error.code === 'ENOENT') {
-      console.log('Contacts file not found');
+      console.log('❌ Contacts file not found');
       return null;
     }
 
